@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+  <meta name="application-name" content="Zappar Demo Application">
+  <meta name="robots" content="noindex" />
+  <meta name="robots" content="nofollow">
+  <title>Zappar Demo Application</title>
+  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  <script src="zappar-aframe/zappar-aframe.js"></script
+</head>
+<body>
+  <a-scene>
+      <a-assets>
+          <a-asset-item id="target-file" src="track-image.zpt"/>
+      </a-assets>
+      <a-entity camera zappar-camera></a-entity>
+      <a-entity zappar-image="#target-file">
+          <a-cube color="#0095DD"></a-cube>
+      </a-entity>
+  </a-scene>
+</body>
+</html>
