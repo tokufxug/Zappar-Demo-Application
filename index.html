@@ -15,6 +15,11 @@
       <a-assets>
           <a-asset-item id="target-file" src="track-image.zpt"/>
       </a-assets>
+      <!-- Ask user for camera permissions, display some text if permission is denied -->
+      <a-entity zappar-permissions-ui id="permissions">
+        <!-- Remove the text entity to use Zappar's default permission denied UI -->
+        <a-entity text="value: Please reload the page, accepting the camera permissions." position="0 0 -2"></a-entity>
+      </a-entity>
       <a-entity camera zappar-camera></a-entity>
       <a-entity zappar-image="#target-file">
           <a-cube color="#0095DD"></a-cube>
